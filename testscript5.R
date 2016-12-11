@@ -22,6 +22,18 @@ alldata$FamilyID[alldata$Family <= 2] <- 'Small'
 famIDs <- data.frame(table(alldata$FamilyID))
 famIDs <- famIDs[famIDs$Freq <= 2,]
 
+alldata$FamilyID[alldata$FamilyID %in% famIDs$Var1] <- 'Small'
+alldata$FamilyID <- factor(alldata$FamilyID)
+train <- alldata[1:891,]
+test <- alldata[892:1309,]
+
+fit <- rpart(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare + Embarked + Title + Family + FamilyID,
+               data=train, 
+               method="class")
+
+fancyRpartPlot(fit)
+
+Prediction <- predict(fit, test, type = "class")
 submit <- data.frame(PassengerId = test$PassengerId, Survived = Prediction)
 write.csv(submit, file = "featureengineering.csv", row.names = FALSE)
 
