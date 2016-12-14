@@ -6,25 +6,21 @@ and the upper-class. The task of this project is to predict whether a given pass
 
 + **[Features](#features)**
   + [Intoroduction](#1Introduction)
-  + [File A Complaint](#2file-a-complaint)
-  + [Discussion Forum](#3discussion-forum)
-  + [Want To Help ?](#4want-to-help?)
-  + [SOS](#5sos)
 + **[Contributors](#contributors)**
 + **[Project Maintainers](#project-maintainers)**
 
 ##Features
 ##1.Introduction
-We have been given the data of a passenger as follows
-  ### a) Variable Name	Description
-  ### b) Survived	Survived (1) or died (0)
-  ### c) Pclass	Passenger’s class
-  ### d) Name	Passenger’s name
-  ### e) Sex	Passenger’s sex
-  ### f) Age	Passenger’s age
-  ### g) SibSp	Number of siblings/spouses aboard
-  ### h) Parch	Number of parents/children aboard
-  ### i) Ticket	Ticket number
-  ### j) Fare	Fare
-  ### k) Cabin	Cabin
-  ### l) Embarked	Port of embarkation
+We have been given the data of a passenger as follows <br />
+  a) Variable Name	Description <br />
+  b) Survived	Survived (1) or died (0) <br />
+  c) Pclass	Passenger’s class <br />
+  d) Name	Passenger’s name <br />
+  e) Sex	Passenger’s sex <br />
+  f) Age	Passenger’s age <br />
+  g) SibSp	Number of siblings/spouses aboard <br />
+  h) Parch	Number of parents/children aboard <br />
+  i) Ticket	Ticket number <br />
+  j) Fare	Fare <br />
+  k) Cabin	Cabin <br />
+  l) Embarked	Port of embarkation <br />
